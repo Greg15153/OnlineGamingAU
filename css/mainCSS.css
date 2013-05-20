@@ -1,0 +1,33 @@
+body{
+	background-color: #616161;
+	margin: 0px;
+	min-width: 920px;
+}
+
+#navBar{
+	background-color: #191717;
+	border-bottom: 1px solid #9c0606;
+	width: 100%;
+	height: 50px;
+	color: #FFFFFF;
+	-moz-box-shadow: 0 0px 10px 0px #000;
+    -webkit-box-shadow: 0 0px 10px 0px #000;
+}
+
+#navLinks{
+	width: 920px;
+	padding-top: 12px;
+	margin: 0px auto;
+	vertical-align: text:middle;
+	font-size: 24px;
+	font-family: "Arial";
+	font-style: bold;
+}
+
+#navBar a:link, #navBar a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+#navBar a:hover{
+	color: #616161;
+}
