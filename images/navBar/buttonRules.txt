@@ -1,0 +1,17 @@
+Navbar Button:
+Font: Arial
+Font-Size: 24
+Height: 50
+Width: Length of word + 35
+Background-color: #191717
+Right border: 1 px #000000
+
+Navbar Hover Button:
+Gradient Overlay-
+Blend mode: Subtract
+Opacity: 100%
+Gradient: farleft: #191717 farright: #000000
+Style: Linear
+Align with Layer: Yes
+Angle: 90
+Scale: 150%

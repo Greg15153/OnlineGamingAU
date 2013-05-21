@@ -8,10 +8,11 @@
 
 <div id="navBar">
 	<div id="navLinks">
-		<img src="images/logoPlaceHolder.png" /><a href='index.php'>Home</a> |
-		<a href='members.php'>Members</a> |
-		<a href='games.php'>Games</a> |
-		<a href='signIn.php'>Sign in</a> |
-		<a href='register.php'>Register</a>
+		<div id="navButtons">
+		<a id="navBtnHome" href="index.php" alt="Home"></a><a id="navBtnMembers" href="members.php" alt="Members"></a><a id="navBtnGames" href='games.php' alt="Games"></a><a id="navBtnSignIn" href="signIn.php" alt="Sign in"></a><a id="navBtnRegister" href="register.php" alt="Register"></a>
+		</div>
 	</div>
+</div>
+<div id="logoHolder">
+	<img id='logo' src="images/navBar/logo.png" />
 </div>
