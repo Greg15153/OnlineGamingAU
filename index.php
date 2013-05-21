@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-
-<html lang="en-US">
-
-<head>
-
-<title>Arcadia University Online Gaming Club</title>
-
-<?php require_once 'templates/header.php'; ?>
-
-</head>
-
-
-<body>
-	<div id="sliderContainer">
-		<?php require_once 'slider/slider.php'; ?>
-	</div>
-		<?php require_once 'templates/newsPosts.php'; ?>
-</body>
-</html>
+<?php
+	require_once("framework/globals.php");
+	//$th->load("Error");
+	
+	if($do == "") {
+		$th->load("Header");
+		$th->load("Home");
+		$th->load("Footer");
+	}
+	else if($do != "" && in_array($do, $validPlugins)){
+		handleRequest($do);
+		$th->load($do);
+	}
+	else {
+		header("Location: index.php?msg=100");
+	}
+?>
