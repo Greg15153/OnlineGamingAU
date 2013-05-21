@@ -15,5 +15,6 @@
 	<div id="sliderContainer">
 		<?php require_once 'slider/slider.php'; ?>
 	</div>
+		<?php require_once 'templates/newsPosts.php'; ?>
 </body>
 </html>

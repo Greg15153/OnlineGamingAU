@@ -2,6 +2,7 @@ body{
 	background-color: #616161;
 	margin: 0px;
 	color: #FFFFFF;
+	font-family: "Arial";
 }
 
 #navBar{
@@ -68,13 +69,6 @@ body{
 #navBtnRegister:hover{
 	background-position: 0 -50px;
 }
-#navBar a:link, #navBar a:visited{
-	color: #FFF;
-	text-decoration: none;
-}
-#navBar a:hover{
-	color: #616161;
-}
 
 #logoHolder{
 	display: block;
@@ -92,3 +86,4 @@ body{
 	margin: 0px auto;
 	z-index: -1200;
 }
+

@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/mainCSS.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
+<?php require_once("dbConnect.php"); ?>
 <div id="navBar">
 	<div id="navLinks">
 		<div id="navButtons">
