@@ -1,0 +1,2 @@
+Width: 920px
+Height: 200px

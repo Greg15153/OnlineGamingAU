@@ -13,6 +13,5 @@
 		</div>
 	</div>
 </div>
-<div id="logoHolder">
-	<img id='logo' src="images/navBar/logo.png" />
-</div>
+<div id="logoHolder"><img id='logo' src="images/navBar/logo.png" /></div>
+<br />

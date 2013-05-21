@@ -6,14 +6,14 @@
 
 <title>Arcadia University Online Gaming Club</title>
 
-<?php
-	require_once 'templates/header.php';
-?>
+<?php require_once 'templates/header.php'; ?>
 
 </head>
 
 
 <body>
-
+	<div id="sliderContainer">
+		<?php require_once 'slider/slider.php'; ?>
+	</div>
 </body>
 </html>
