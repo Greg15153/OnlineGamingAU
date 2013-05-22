@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2013 at 11:09 PM
+-- Generation Time: May 22, 2013 at 05:33 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `newspost` (
   `newsPoster` varchar(50) NOT NULL COMMENT 'News Poster',
   `newsContent` longtext NOT NULL COMMENT 'News Content',
   PRIMARY KEY (`newsID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `newspost`
@@ -41,7 +41,9 @@ CREATE TABLE IF NOT EXISTS `newspost` (
 
 INSERT INTO `newspost` (`newsID`, `newsTitle`, `newsDate`, `newsPoster`, `newsContent`) VALUES
 (1, 'Welcome to Knight Gaming', '2013-05-21 20:43:12', '1', 'Hello Everyone'),
-(2, 'This is a second post', '2013-05-21 21:00:13', '1', 'Hey, Just wanted to test to make sure everything was working correctly.');
+(2, 'This is a second post', '2013-05-29 21:00:13', '1', 'Hey, Just wanted to test to make sure everything was working correctly.'),
+(3, 'Three', '2013-05-22 01:50:56', '2', 'Three three three'),
+(7, 'This is a test', '2013-05-22 02:12:52', '1', 'HAHAHAHAH SLAVES');
 
 -- --------------------------------------------------------
 
@@ -62,14 +64,15 @@ CREATE TABLE IF NOT EXISTS `userinformation` (
   `position` varchar(20) NOT NULL COMMENT 'Position',
   `joinDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Join Date',
   PRIMARY KEY (`userID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `userinformation`
 --
 
 INSERT INTO `userinformation` (`userID`, `firstName`, `lastName`, `username`, `password`, `email`, `birthday`, `admin`, `class`, `position`, `joinDate`) VALUES
-(1, 'Greg', 'Ellis', 'gellis', '123', 'gellis@arcadia.edu', '2013-05-01', 1, 'junior', 'President', '2013-05-21 20:42:41');
+(1, 'Greg', 'Ellis', 'gellis', '123', 'gellis@arcadia.edu', '2013-05-01', 1, 'junior', 'President', '2013-05-21 20:42:41'),
+(2, 'Ethan', 'Stamp', 'Faggot123', '123', 'fag@gmail.com', '2013-05-22', 0, 'Junior', 'Poop Saucer', '2013-05-22 03:00:34');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
