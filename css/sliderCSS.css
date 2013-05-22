@@ -62,21 +62,21 @@
 }
 
 a#prev{
-	background: url(images/slider/prevSet.png) 0px 0px no-repeat;
+	background: url(../images/slider/prevSet.png) 0px 0px no-repeat;
 	float: left;
 }
 
 a#prev:hover{
-	background: url(images/slider/prevSet.png) 0px -28px no-repeat;
+	background: url(../images/slider/prevSet.png) 0px -28px no-repeat;
 	float: left;
 }
 
 a#next{
-	background: url(images/slider/nextSet.png) 0px 0px no-repeat;
+	background: url(../images/slider/nextSet.png) 0px 0px no-repeat;
 	float: right;
 }
 
 a#next:hover{
-	background: url(images/slider/nextSet.png) 0px -28px no-repeat;
+	background: url(../images/slider/nextSet.png) 0px -28px no-repeat;
 	float: right;
 }

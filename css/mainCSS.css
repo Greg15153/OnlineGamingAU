@@ -80,7 +80,7 @@ body{
 }
 
 #sliderContainer{
-	background-image: url(../slider/images/sliderBG.png);
+	background-image: url(../images/slider/sliderBG.png);
 	height: 200px;
 	padding-left: 15px;
 	margin: 0px auto;
