@@ -46,7 +46,7 @@
 }
 
 #buttons{
-	position: fixed;
+	position: absolute;
 	padding-top: 170px;
 	padding-right: 10px;
 	opacity:0.4;

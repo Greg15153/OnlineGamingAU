@@ -1,7 +1,7 @@
 <?php
 	require_once("framework/globals.php");
 	//$th->load("Error");
-	
+
 	if($do == "") {
 		$th->load("Header");
 		$th->load("Home");

@@ -48,7 +48,7 @@
 	###### Global Variables ######
 
 	/* Global MYSQL Object */
-	$mysql = new MYSQL(HOST, USER, PASS, DBASE);
+	$mysql = new MYSQL("localhost", "root", "", "knightgaming");
 	
 	/* Global Template Handler Object */
 	$th = new TH();
