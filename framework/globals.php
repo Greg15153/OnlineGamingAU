@@ -21,19 +21,19 @@
 	define("HOST", "localhost");
 	
 	/* User for MYSQL */
-	define("USER", "");
+	define("USER", "root");
 	
 	/* Password for MYSQL */
 	define("PASS", "");
 	
 	/* Database for MYSQL */
-	define("DBASE", "");
+	define("DBASE", "knightgaming");
 	
 	/* Debug Mode Info */
 	define("MODE", 0);
 	
 	/* Define Plugins Directory */
-	define("PLUGIN_DIR", "core/plugins/");
+	define("PLUGIN_DIR", "framework/plugins/");
 	
 	/* Define DirectAccess constant */
 	define("DirectAccess", 0);
@@ -48,7 +48,7 @@
 	###### Global Variables ######
 
 	/* Global MYSQL Object */
-	$mysql = new MYSQL("localhost", "root", "", "knightgaming");
+	$mysql = new MYSQL(HOST, USER, PASS, DBASE);
 	
 	/* Global Template Handler Object */
 	$th = new TH();
