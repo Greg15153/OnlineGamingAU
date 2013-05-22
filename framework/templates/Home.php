@@ -34,8 +34,8 @@
 		$result2 = $mysql ->getArray($sqlGetPoster);
 		$postDate = date('M d, Y' , strtotime($result[$i]['newsDate']));
 		echo "<div class='newsContainer'>";
-		echo "<div class='newsTitle'><a href='?do=news.php?id=".$result[$i]['newsID']."'>".$result[$i]['newsTitle']."</a>";
-		echo "<div class='newsPoster'><a href='?do=memberProfile.php?id=".$result[$i]['newsPoster']."'>".$result2[0]['username']." on ".$postDate."</a></div></div>";
+		echo "<div class='newsTitle'><a href='?do=News&id=".$result[$i]['newsID']."'>".$result[$i]['newsTitle']."</a>";
+		echo "<div class='newsPoster'><a href='?do=Profile&id=".$result[$i]['newsPoster']."'>".$result2[0]['username']." on ".$postDate."</a></div></div>";
 		echo "<div class='newsContent'><p>&ensp;".$result[$i]['newsContent']."</p></div>";
 		echo "</div>";
 		}
