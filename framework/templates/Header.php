@@ -22,5 +22,5 @@
 		</div>
 	</div>
 </div>
-<div id="logoHolder"><img id='logo' src="images/navBar/logo.png" /></div>
+<div id="logoHolder"><a href="index.php"><img id='logo' src="images/navBar/logo.png" border="0" /></a></div>
 <br />
