@@ -18,7 +18,7 @@
 <div id="navBar">
 	<div id="navLinks">
 		<div id="navButtons">
-		<a id="navBtnHome" href="index.php" alt="Home"></a><a id="navBtnMembers" href="?do=members" alt="Members"></a><a id="navBtnGames" href='?do=games' alt="Games"></a><a id="navBtnSignIn" href="?do=signin" alt="Sign in"></a><a id="navBtnRegister" href="?do=register" alt="Register"></a>
+		<a id="navBtnHome" href="index.php" alt="Home"></a><a id="navBtnMembers" href="?do=Members" alt="Members"></a><a id="navBtnGames" href='?do=Games' alt="Games"></a><a id="navBtnSignIn" href="?do=Signin" alt="Sign in"></a><a id="navBtnRegister" href="?do=Register" alt="Register"></a>
 		</div>
 	</div>
 </div>
