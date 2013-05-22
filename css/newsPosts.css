@@ -11,7 +11,7 @@
 	border-bottom: 1px solid #FFF;
 }
 
-.newsTitle a:link{
+.newsTitle a:link, a:visited{
 	color: #FFF;
 	text-decoration: none;
 	font-size: 30px;
@@ -20,4 +20,8 @@
 .newsPoster, .newsPoster a:link{
 	font-size: 12px;
 	float: right;
+}
+
+.newsPoster a:hover, .newsTitle a:hover{
+	color: #191717;
 }
