@@ -1,11 +1,11 @@
 <?php
 	require_once("framework/globals.php");
 	//$th->load("Error");
-
+	$th->load("Header");
 	if($do == "") {
-		$th->load("Header");
+		
 		$th->load("Home");
-		$th->load("Footer");
+		
 	}
 	else if($do != "" && in_array($do, $validPlugins)){
 		handleRequest($do);
@@ -14,4 +14,5 @@
 	else {
 		header("Location: index.php?msg=100");
 	}
+	$th->load("Footer");
 ?>
