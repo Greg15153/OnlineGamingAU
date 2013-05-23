@@ -5,6 +5,12 @@ body{
 	font-family: "Arial";
 }
 
+#error {
+	background-color: #E53e39;
+	text-align: center;
+	width: 100%;
+}
+
 #navBar{
 	background-color: #191717;
 	border-bottom: 1px solid #9c0606;
