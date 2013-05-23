@@ -9,6 +9,7 @@ body{
 	background-color: #191717;
 	border-bottom: 1px solid #9c0606;
 	width: 100%;
+	min-width: 920px;
 	height: 50px;
 	color: #FFFFFF;
 	-moz-box-shadow: 0 0px 10px 0px #000;
