@@ -29,7 +29,15 @@
 		<?
 		}
 		else{
-			$result = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = ".$_GET['id'].";");
+			$currentNewsID = $_GET['id'];
+			$result = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = ".$currentNewsID.";");
+			if(count($result) == 0){
+		?>
+			<div class="pageTitle">No news post found, returning to archive in 5 seconds...</div>
+		<?
+			header( "refresh:5;url=?do=News" );
+			}
+			else{
 			$result2 = $mysql ->getArray("SELECT username FROM `userInformation` WHERE userID = '".$result[0]['newsPoster']."'");
 			$postDate = date('M d, Y' , strtotime($result[0]['newsDate']));
 		?>
@@ -40,9 +48,37 @@
 			<div class='newsContent'><p>&ensp;<?=$result[0]['newsContent']?></p></div>
 			</div>
 		
-			<div class='pageTitle'><a href='?do=News'>Go back to archive</a></div>
+			<div class='pageTitle'>
+		<?
+			//Checks if there is a news post when clicking previous button, if not, continues to search till hits 0.
+			if($currentNewsID != 1){
+				$prevNewsID = $currentNewsID-1;
+				$prevResult = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = $prevNewsID;");
+				while(count($prevResult) == 0){
+					$prevNewsID = $prevNewsID-1;
+					$prevResult = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = $prevNewsID;");
+				}
+		?>
+			<a style='float: left;' href='?do=News&id=<?=$prevNewsID?>'>Previous Article</a>
+		<?
+			}
+		?>
+			<a href='?do=News'>Go back to archive</a>
 			
 		<?
-		}
+			$total = $mysql -> getMax("newspost", "newsID");
+			
+			if($total[0]['MAX(newsID)'] > $currentNewsID){
+				$nextNewsID = $currentNewsID+1;
+				$nextResult = $mysql -> getArray("SELECT * FROM `newspost` WHERE `newsID` = $nextNewsID;");
+				while(count($nextResult) == 0){
+					$nextNewsID = ($nextNewsID+1);
+					$nextResult = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = $nextNewsID;");
+				}
+		
+		?>
+			<a style='float: right' href='?do=News&id=<?=$nextNewsID?>'>Next Article</a></div>
+		<?
+		}}}
 	?>
 </div>

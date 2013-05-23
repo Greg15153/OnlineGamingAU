@@ -88,7 +88,8 @@ body{
 }
 
 .pageTitle{
-	margin: 0px;
+	width: 920px;
+	margin: 0px auto;
 	text-align: center;
 }
 .newsContainer{
