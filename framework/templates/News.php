@@ -29,7 +29,7 @@
 		<?
 		}
 		else{
-			$currentNewsID = $_GET['id'];
+			$currentNewsID = mysql_real_escape_string($_GET['id']);
 			$result = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = ".$currentNewsID.";");
 			if(count($result) == 0){
 		?>
