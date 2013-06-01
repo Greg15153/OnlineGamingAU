@@ -1,6 +1,13 @@
+<script>
+		//Makes the entire row goto the newsID page. You can still click on the news link or member name to go to other pages.
+		function goToNewsPage(newsID){
+			window.location = "index.php?do=News&id="+newsID;
+		}
+</script>
 <div class="news">
 <?php
 	global $mysql;
+	//Checks if id variable is available. If not loads an archive.
 	if(!isset($_GET['id']) || $_GET['id'] == ""){
 		$result = $mysql->getArray("SELECT * FROM  newspost ORDER BY newsDate DESC");
 ?>
@@ -17,7 +24,7 @@
 				$poster = $post['newsPoster'];
 				$result2 = $mysql ->getArray("SELECT username FROM userInformation WHERE userID='$poster'");
 		?>
-			<tr>
+			<tr onClick="goToNewsPage('<?=$post['newsID']?>')">
 						<td><a href='?do=News&id=<?=$post['newsID']?>'><?=$post['newsTitle']?></a></td>
 						<td><a href='?do=Profile&id=<?=$post['newsPoster']?>'><?=$result2[0]['username']?></a></td>
 						<td><?=$postDate?></td>
@@ -29,13 +36,12 @@
 		<?
 		}
 		else{
-			$currentNewsID = mysql_real_escape_string($_GET['id']);
+			//If ID exists, it loads that content instead of the archive.
+			$currentNewsID = $_GET['id'];
 			$result = $mysql -> getArray("SELECT * FROM  `newspost` WHERE `newsID` = ".$currentNewsID.";");
+			//If the ID is there but there is no information for the ID, loads error message and goes back to archive.
 			if(count($result) == 0){
-		?>
-			<div class="pageTitle">No news post found, returning to archive in 5 seconds...</div>
-		<?
-			header( "refresh:5;url=?do=News" );
+				header("Location: index.php?do=News&msg=101");
 			}
 			else{
 			$result2 = $mysql ->getArray("SELECT username FROM `userInformation` WHERE userID = '".$result[0]['newsPoster']."'");
@@ -67,7 +73,7 @@
 			
 		<?
 			$total = $mysql -> getMax("newspost", "newsID");
-			
+			//Checks if there is a news post when clicking next button, if not, continues to search till hits 0.
 			if($total[0]['MAX(newsID)'] > $currentNewsID){
 				$nextNewsID = $currentNewsID+1;
 				$nextResult = $mysql -> getArray("SELECT * FROM `newspost` WHERE `newsID` = $nextNewsID;");

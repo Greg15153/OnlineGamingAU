@@ -1,0 +1,1 @@
+Error #101 - News item not found

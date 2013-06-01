@@ -1,3 +1,5 @@
+/* index/everypage */
+
 body{
 	background-color: #616161;
 	margin: 0px;
@@ -99,6 +101,9 @@ body{
 	margin: 0px auto;
 	text-align: center;
 }
+
+/* News Page */
+
 .newsContainer{
 	background-color: #9c0606;
 	border: 1px solid #FFF;
@@ -162,4 +167,86 @@ body{
 #newsTable tr:hover td{
 	background: #CCC6C6;
 	color: #339;
+}
+
+/* Members Page */
+
+
+#membersTable{
+	font-size: 12px;
+	margin: 45px auto;
+	width: 700px;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #FFF;
+	-moz-box-shadow: 0 0px 10px 0px #000;
+    -webkit-box-shadow: 0 0px 10px 0px #000;
+}
+#membersTable th{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #9c0606;
+	border-bottom: 1px solid #fff;
+	color: #FFF;
+}
+#membersTable td{
+	padding: 8px;
+	background: #868484; 
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+}
+#membersTable tr:hover td{
+	background: #CCC6C6;
+	color: #339;
+}
+
+/* Members Page - Profile Contents */
+
+#profileContainer{
+	background-color: #9c0606;
+	border: 1px solid #FFF;
+	padding: 10px;
+	width: 920px;
+	height: 100%;
+	margin: 20px auto;
+}
+#profileTitle{
+	font-size: 32px;
+	font-weight: bold;
+}
+#profileImageContainer{
+	margin-top: 10px;
+}
+#profileImage{
+	min-width: 175px;
+	min-height: 175px;
+	max-width: 175px;
+	max-height: 175px;
+}
+#profileInfo{
+	margin-left: 180px;
+	margin-top: 25px;
+}
+.boldedText{
+	font-weight: bold;
+}
+
+/* Games Page */
+
+#gameContainer{
+	background-color: #9c0606;
+	border: 1px solid #FFF;
+	padding: 10px;
+	width: 920px;
+	height: 100%;
+	margin: 20px auto;
+}
+#games{
+	margin: 0px auto;
+}
+.gameItem{
+	border: 1px solid black;
+	width: 210px;
+	height: 100px;
 }
