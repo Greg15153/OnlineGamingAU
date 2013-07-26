@@ -8,7 +8,7 @@
 	session_start();
 	ob_start();
 
-	//error_reporting(0);
+	error_reporting(0);
 	require_once("mysql.php");
 	require_once("Clean.php");
 	require_once("TemplateHandler.php");
