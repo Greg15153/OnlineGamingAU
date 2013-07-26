@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/mainCSS.css" />
 	<link rel="stylesheet" type="text/css" href="css/sliderCSS.css" />
-	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="js/sliderJS.js"></script>
 
 </head>
